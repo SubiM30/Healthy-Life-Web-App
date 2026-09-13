@@ -30,7 +30,7 @@ All user data is stored **only in the browser's `localStorage`** — there is no
 | Frontend   | HTML5, CSS3, vanilla JavaScript (single-page app, mobile-first, responsive) |
 | Charts     | Chart.js 4 (via CDN) |
 | Backend    | Node.js + Express (exists **only** to keep the Gemini API key on the server) |
-| AI         | Google Gemini API (`gemini-2.0-flash` by default), called via REST `generateContent` |
+| AI         | Google Gemini API (`gemini-3.6-flash` by default), called via REST `generateContent` |
 | Storage    | Browser `localStorage` |
 
 ---
@@ -93,7 +93,7 @@ When the server starts you should see:
 -----------------------------------------------------------
   HealthyLife – Smart Health & Well-Being Awareness System
   Running at http://localhost:3000
-  Gemini model: gemini-2.0-flash
+  Gemini model: gemini-3.6-flash
   API key loaded: yes
 -----------------------------------------------------------
 ```
@@ -102,13 +102,13 @@ When the server starts you should see:
 
 ## About the Gemini model
 
-The app defaults to **`gemini-2.0-flash`**. If that model name is not available on your API key, set a different one in `.env`:
+The app defaults to **`gemini-3.6-flash`**. If that model name is not available on your API key, set a different one in `.env`:
 
 ```
-GEMINI_MODEL=gemini-2.0-flash-lite
+GEMINI_MODEL=gemini-3.8-flash
 ```
 
-(Other commonly available names include `gemini-2.0-flash-lite`, `gemini-1.5-flash`, or `gemini-1.5-flash-8b`. Check the [Gemini API model list](https://ai.google.dev/gemini-api/docs/models) for the current names.)
+(Other commonly available names include `gemini-3.7-flash`, `gemini-3.5-flash`, or `gemini-3.5-flash-lite`. Check the [Gemini API model list](https://ai.google.dev/gemini-api/docs/models) for the current names.)
 
 If the key is missing or invalid, the chat widget and the daily recommendation show a friendly error message instead of crashing — the rest of the app (trackers, charts, library) keeps working fully offline.
 
