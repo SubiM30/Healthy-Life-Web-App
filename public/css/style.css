@@ -535,6 +535,10 @@ input[type="number"], input[type="date"], input[type="text"] {
   overflow: hidden;
 }
 
+.chat-panel[hidden] {
+  display: none;
+}
+
 .chat-head {
   display: flex;
   justify-content: space-between;
