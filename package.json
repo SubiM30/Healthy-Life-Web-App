@@ -1,0 +1,25 @@
+{
+  "name": "healthylife",
+  "version": "1.0.0",
+  "description": "HealthyLife - Smart Health & Well-Being Awareness System (1M1B student project, UN SDG 3)",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "node --watch server/server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "wellness",
+    "awareness",
+    "sdg3",
+    "1m1b",
+    "gemini"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  }
+}
